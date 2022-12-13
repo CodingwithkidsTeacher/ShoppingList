@@ -1,0 +1,30 @@
+﻿@model ShoppingList.Models.Item
+
+<h1> Edit Item</h1>
+
+
+<form method="post">
+    <div class="form-group row col-6">
+        <label>Name </label>
+        <input asp-for="Name" class="form-control" />
+    </div>
+
+    <div class="form-group row col-6">
+        <label>Details </label>
+        <input asp-for="Details" class="form-control" />
+    </div>
+
+    <div class="form-group row col-6">
+        <label>Amount </label>
+        <input asp-for="Amount" type="number" step="0.01" class="form-control" />
+    </div>
+    <div class="form-group row">
+        <div class="col-3">
+            <input type="submit" value="Update" class="btn btn-info form-control" />
+        </div>
+        <div class="col-3">
+            <a class="btn btn-secondary form-control back-btn">Back to Home</a>
+        </div>
+        
+    </div>
+</form>
